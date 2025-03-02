@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autentificare</title>
+    <title>Contact</title>
     <style>
         body
         {
-            background-color: dimgrey;
+            background-color: #F0BB78;
         }
         *
         {
@@ -15,19 +15,68 @@
         }
         nav
         {
-            background-color: #1D1616;
-            color: #EEEEEE;
-            height: 40px;
+            background-color: #FFF0DC;
             display: flex;
+            color: white;
+            height: 40px;
             align-items: center;
+            border-radius: 20px;
+            margin: 5px;
             padding: 10px;
             gap: 10px;
         }
         .logo
         {
+            height: 40px; 
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .logo:hover
+        {
+            width: 55px;
+            height: 55px;
+        }
+        .cosh 
+        {
             height: 40px;
             width: 40px;
         }
+        .divcosh
+        {
+           display: flex;
+           height: 40px;
+           border-radius: 20px;
+           margin: 5px;
+           padding: 10px;  
+           gap: 10px;
+           width: 33%;
+           justify-content: end;
+           align-items: center;
+        }
+        .produse
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 10px;  
+            gap: 10px;
+            width: 33%;
+            align-items: center;
+            justify-content: center;
+        }
+        .imagine
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 10px;  
+            gap: 10px;
+            width: 33%;
+            align-items: center;
+        }
+    
         .ptinputuri
         {
             display: flex;
@@ -35,10 +84,10 @@
             gap: 10px;
             align-items: center;
             justify-content: center;
-            background-color: #EEEEEE;
+            background-color: #FFF0DC;
             height: 500px;
             width: 450px;
-            
+            border-radius: 20px;
             
         }
         .centru
@@ -46,32 +95,58 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 25px;
         }
         .mesaj
         {
+            border: 2px solid #131010;
             height: 200px;
             width: 300px;
+            border-radius: 4px;
+        }
+        .locdescris
+        {
+            border: 2px solid #131010;
+            border-radius: 4px;
+            width: 300px;
+            height: 30px;
         }
 
     </style>
 </head>
 <body>
-    <nav>
-        <img src="/Screenshot 2025-02-14 163058.png" class="logo">
-        <a href="/Acasa/paginaprincipala.html">Acasa</a>
-        <a href=""></a>
 
+    <nav>
+        <div class="imagine">
+        <a href="/Acasa/paginaprincipala.html"><img src="/6771589_book_education_idea_learning_school_icon.png" class="logo"></a>
+        </div>
+        <div class="produse">
         
+        </div>
+        <div class="divcosh">
+            <a href="/Produse/produse.html">Produse</a>
+            <a href=""><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
+        </div>
     </nav>
+
+
     <div class="centru">
         <div class="ptinputuri">
             <form name="submit-to-google-sheet">
-                <input class="locdescris" name="email" type="email" placeholder="email" required>
-                <br>
+                <p>Numele si prenumele</p>
                 <input class="locdescris" name="name" type="text" placeholder="name" required>
                 <br>
-                <input class="locdescris" name="message" type="text" placeholder="message" class="mesaj" required>
+                <br>
+                <p>Adresa de email</p>
+                <input class="locdescris" name="email" type="email" placeholder="email" required>
+                <br>
+                <br>
+                <p>Numar de telefon</p>
+                <input class="locdescris" name="telefon" type="tel" placeholder="telefon" requiered>
+                <br>
+                <br>
+                <p>Mesajul dumneavoastra</p>
+                <input name="message" type="text" placeholder="message" class="mesaj" required>
                 <br>
                 <button type="submit">Trimite</button>
               </form>

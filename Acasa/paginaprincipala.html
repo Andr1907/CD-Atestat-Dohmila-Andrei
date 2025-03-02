@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,9 @@
         nav
         {
             background-color: #FFF0DC;
+            display: flex;
             color: white;
             height: 40px;
-            display: flex;
             align-items: center;
             border-radius: 20px;
             margin: 5px;
@@ -30,12 +30,69 @@
             height: 40px; 
             width: 40px;
         }
+        .contact 
+        {
+            height: 40px;
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .contact:hover
+        {
+            width: 50px;
+            height: 50px;
+        }
+        .divcontact
+        {
+           display: flex;
+           height: 40px;
+           border-radius: 20px;
+           margin: 5px;
+           padding: 10px;  
+           gap: 10px;
+           width: 33%;
+           justify-content: end;
+        }
+        .cosh 
+        {
+            height: 40px;
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .cosh:hover
+        {
+            width: 50px;
+            height: 50px;
+        }
+        .produse
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 10px;  
+            gap: 10px;
+            width: 33%;
+            align-items: center;
+            justify-content: center;
+        }
+        .imagine
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 10px;  
+            gap: 10px;
+            width: 33%;
+            align-items: center;
+            justify-content: left;
+        }
         .divptdivtext
         {
             display: flex;
             align-items: top;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 20px;
         }
         .textul
         {
@@ -51,16 +108,68 @@
             padding: 25px;
             border-radius: 20px;
         }
+        .divh
+        {
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .divharta
+        {
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .harta
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            padding: 20px;
+            gap: 10px;
+            height: 300px;
+            width: 600px;
+        }
+        .primultitlu
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            width: 600px;  
+        }
     </style>
 </head>
 <body>
+
     <nav>
-        <img src="/Screenshot 2025-02-14 163058.png" class="logo">
-        <input type="search" placeholder="Cauta produse">
+        <div class="imagine">
+        <img src="/6771589_book_education_idea_learning_school_icon.png" class="logo">
+        </div>
+        <div class="produse">
         <a href="/Produse/produse.html">Produse</a>
-        <a href="/Contact/Contact.html">Contact</a>
-        
+        </div>
+        <div class="divcontact">
+            <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
+            <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
+        </div>
     </nav>
+
+
+    <div class="divh">
+        <div class="primultitlu">
+            <h1>Despre noi</h1>
+        </div>
+    </div>
+
     <div class="divptdivtext">
     <div class="textul">
         <p>Site-ul nostru este dedicat celor care doresc să investească în dezvoltarea lor personală, 
@@ -73,6 +182,17 @@
             să devii cea mai bună versiune a ta. Fiecare carte este descrisă detaliat, iar recenziile 
             cititorilor îți vor oferi perspective valoroase pentru a face alegerea corectă. Investind în 
             aceste lecturi, investești în tine și în viitorul tău!</p>
+    </div>
+    </div>
+
+    <div class="divh">
+        <div class="primultitlu">
+            <h1>Locatii</h1>
+        </div>
+    </div>
+    <div class="divharta">
+    <div class="harta">
+        <p>harta aici</p>
     </div>
     </div>
     
