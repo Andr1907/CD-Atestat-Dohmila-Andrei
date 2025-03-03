@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principala</title>
+    <title>Pachete</title>
     <style>
         body
         {
@@ -27,7 +27,13 @@
         }
         .logo
         {
-            height: 55px; 
+            height: 40px; 
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .logo:hover
+        {
+            height: 55px;
             width: 55px;
         }
         .contact 
@@ -80,6 +86,29 @@
         .produse:hover
         {
             font-size: 140%;
+        }
+        .stilproduse
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .pachete
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0px;
+            padding: 10px;  
+            gap: 10px;
+            width: 20%;
+            align-items: center;
+            justify-content: start;
+            font-size: 140%;
+        } 
+        .stilpachete
+        {
+            text-decoration: none;
+            color: black;
         }
         .imagine
         {
@@ -152,64 +181,19 @@
             border-radius: 20px;
             width: 950px;  
         }
-        .stilproduse
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .pachete
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: start;
-            font-size: 120%;
-            transition: font-size 1s;
-        } 
-        .pachete:hover
-        {
-            font-size: 140%;
-        }
-        .stilpachete
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .treicutii
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .cutie1
-        {   
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 200px;
-            border-radius: 20px;
-            background-color: whitesmoke;
-            margin: 20px;
-        }
-    </style>
+</style>
 </head>
 <body>
-
+    
     <nav>
         <div class="imagine">
-        <img src="/6771589_book_education_idea_learning_school_icon.png" class="logo">
+        <a href="/Acasa/paginaprincipala.html"><img src="/6771589_book_education_idea_learning_school_icon.png" class="logo"></a>
         </div>
         <div class="produse">
         <a href="/Produse/produse.html" class="stilproduse"><b>Produse</b></a>
         </div>
         <div class="pachete">
-            <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
+            <a href="" class="stilpachete"><b>Pachete</b></a>
         </div>
         <div class="divcontact">
             <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
@@ -217,48 +201,5 @@
         </div>
     </nav>
 
-    <div class="treicutii">
-        <div class="cutie1">
-        <p>livrare rapida</p>
-        </div>
-        <div class="cutie1">
-            <p>transport gratuit</p>
-        </div>
-        <div class="cutie1">
-            <p>Pachete cu preturi atractive</p>
-        </div>
-    </div>
-    <div class="divh">
-        <div class="primultitlu">
-            <h1>Despre noi</h1>
-        </div>
-    </div>
-
-    <div class="divptdivtext">
-    <div class="textul">
-        <p>Site-ul nostru este dedicat celor care doresc să investească în dezvoltarea lor personală, 
-            oferind o gamă largă de cărți care abordează subiecte esențiale precum auto-ajutor, motivație,
-            leadership, mindfulness, gestionarea timpului, și multe altele. Fie că ești în căutarea unor 
-            resurse pentru a-ți îmbunătăți abilitățile de comunicare, pentru a înțelege mai bine cum să 
-            îți gestionezi emoțiile sau pentru a-ți descoperi adevăratul potențial, vei găsi o selecție 
-            atent aleasă de titluri care îți vor ghida progresul. Cu o navigare simplă și un proces de 
-             achiziție rapid, site-ul nostru îți oferă acces instantaneu la cunoștințele care te pot ajuta
-            să devii cea mai bună versiune a ta. Fiecare carte este descrisă detaliat, iar recenziile 
-            cititorilor îți vor oferi perspective valoroase pentru a face alegerea corectă. Investind în 
-            aceste lecturi, investești în tine și în viitorul tău!</p>
-    </div>
-    </div>
-
-    <div class="divh">
-        <div class="primultitlu">
-            <h1>Locatii</h1>
-        </div>
-    </div>
-    <div class="divharta">
-    <div class="harta">
-        <p>harta aici</p>
-    </div>
-    </div>
     
 </body>
-</html>
