@@ -81,6 +81,34 @@
         {
             font-size: 140%;
         }
+        .stilproduse
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .pachete
+        {
+            display: flex;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0px;
+            padding: 10px;  
+            gap: 10px;
+            width: 20%;
+            align-items: center;
+            justify-content: start;
+            font-size: 120%;
+            transition: font-size 1s;
+        } 
+        .pachete:hover
+        {
+            font-size: 140%;
+        }
+        .stilpachete
+        {
+            text-decoration: none;
+            color: black;
+        }
         .imagine
         {
             display: flex;
@@ -139,7 +167,19 @@
             padding: 20px;
             gap: 10px;
             height: 300px;
-            width: 600px;
+            width: 450px;
+            margin: 10px;
+        }
+        .map
+        {
+            height: 40px;
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .map:hover
+        {
+            height: 50px;
+            width: 50px;
         }
         .primultitlu
         {
@@ -151,34 +191,6 @@
             padding: 20px;
             border-radius: 20px;
             width: 950px;  
-        }
-        .stilproduse
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .pachete
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: start;
-            font-size: 120%;
-            transition: font-size 1s;
-        } 
-        .pachete:hover
-        {
-            font-size: 140%;
-        }
-        .stilpachete
-        {
-            text-decoration: none;
-            color: black;
         }
         .treicutii
         {
@@ -197,6 +209,11 @@
             background-color: whitesmoke;
             margin: 20px;
         }
+        footer
+        {
+            background-color: #FFF0DC;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -212,6 +229,7 @@
             <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
         </div>
         <div class="divcontact">
+            <a href=""><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
             <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
             <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
         </div>
@@ -249,16 +267,10 @@
     </div>
     </div>
 
-    <div class="divh">
-        <div class="primultitlu">
-            <h1>Locatii</h1>
-        </div>
-    </div>
-    <div class="divharta">
-    <div class="harta">
-        <p>harta aici</p>
-    </div>
-    </div>
+   
     
+    <footer>
+
+    </footer>
 </body>
 </html>
