@@ -131,13 +131,29 @@
     }
     .carte
     {
+        display: flex;
+        justify-content: center;
+        text-align: center;
         width: 150px;
         height: 200px;
     }
     .divcarte
     {
+        display: flex;
+        justify-content: center;
+        text-align: center;
         height: 100px;
         width: 100px;
+    }
+    .aranjat
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        width: 200px;
+        height: 250px;
     }
 
 </style>
@@ -170,7 +186,13 @@
             <th>Produse</th>
         </tr>
         <tr>
-            <td><div class="divcarte"><img src="/Carti/carte1.jpeg" class="carte"></div></td>
+            <td>
+                <div class="aranjat">
+                    <div class="divcarte">
+                        <img src="/Carti/carte1.jpeg" class="carte">
+                    </div>
+                </div>
+            </td>
             <td><img src="/Carti/carte2.png" class="carte"></td>
             <td><img src="/Carti/carte3.jpeg" class="carte"></td>
             <td><img src="/Carti/carte4.jpeg" class="carte"></td>
