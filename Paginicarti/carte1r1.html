@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pachete</title>
+    <title>Document</title>
     <style>
         body
         {
@@ -27,13 +27,7 @@
         }
         .logo
         {
-            height: 40px; 
-            width: 40px;
-            transition: width 1s, height 1s;
-        }
-        .logo:hover
-        {
-            height: 55px;
+            height: 55px; 
             width: 55px;
         }
         .contact 
@@ -103,8 +97,13 @@
             width: 20%;
             align-items: center;
             justify-content: start;
-            font-size: 140%;
+            font-size: 120%;
+            transition: font-size 1s;
         } 
+        .pachete:hover
+        {
+            font-size: 140%;
+        }
         .stilpachete
         {
             text-decoration: none;
@@ -122,78 +121,52 @@
             align-items: center;
             justify-content: left;
         }
-        .divptdivtext
+        .map
         {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
+            height: 40px;
+            width: 40px;
+            transition: width 1s, height 1s;
         }
-        .textul
+        .map:hover
         {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 950px;
-            background-color: whitesmoke;
-            color: black;
-            font-size: 120%;
-            padding: 25px;
-            border-radius: 20px;
+            height: 50px;
+            width: 50px;
         }
-        .divh
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .divharta
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .harta
+        .centrat
         {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: whitesmoke;
-            border-radius: 20px;
-            padding: 20px;
-            gap: 10px;
-            height: 300px;
-            width: 600px;
         }
-        .primultitlu
+        .descriere
         {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             background-color: whitesmoke;
-            color: black;
-            padding: 20px;
-            border-radius: 20px;
-            width: 950px;  
+            width: 100px;
+            height: 100px;
         }
-</style>
+        .adaugaincos
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+
     <nav>
         <div class="imagine">
-        <a href="/Acasa/paginaprincipala.html"><img src="/6771589_book_education_idea_learning_school_icon.png" class="logo"></a>
+        <img src="/6771589_book_education_idea_learning_school_icon.png" class="logo">
         </div>
         <div class="produse">
         <a href="/Produse/produse.html" class="stilproduse"><b>Produse</b></a>
         </div>
         <div class="pachete">
-            <a href="" class="stilpachete"><b>Pachete</b></a>
+            <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
         </div>
         <div class="divcontact">
             <a href="/Acasa/harta.html"><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
@@ -202,5 +175,13 @@
         </div>
     </nav>
 
-    
+    <div class="centrat">
+        <div class="descriere">
+            <img src="/Carti/carte1.jpeg" class="carte">
+        </div>
+        <div class="adaujaincos">
+            <input type="text">
+        </div>
+    </div>
 </body>
+</html>

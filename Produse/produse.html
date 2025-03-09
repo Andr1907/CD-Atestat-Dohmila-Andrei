@@ -69,6 +69,17 @@
         width: 50px;
         height: 50px;
     }
+    .map
+    {
+        height: 40px;
+        width: 40px;
+        transition: width 1s, height 1s;
+    }
+    .map:hover
+    {
+        height: 50px;
+        width: 50px;
+    }
     .imagine
     {
         display: flex;
@@ -82,46 +93,46 @@
         justify-content: left;
     }
     .produse
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: end;
-            font-size: 140%;
-        } 
-        .stilproduse
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .pachete
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: start;
-            font-size: 120%;
-            transition: font-size 1s;
-        } 
-        .pachete:hover
-        {
-            font-size: 140%;
-        }
-        .stilpachete
-        {
-            text-decoration: none;
-            color: black;
-        }
+    {
+        display: flex;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0px;
+        padding: 10px;  
+        gap: 10px;
+        width: 20%;
+        align-items: center;
+        justify-content: end;
+        font-size: 140%;
+    } 
+    .stilproduse
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .pachete
+    {
+        display: flex;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0px;
+        padding: 10px;  
+        gap: 10px;
+        width: 20%;
+        align-items: center;
+        justify-content: start;
+        font-size: 120%;
+        transition: font-size 1s;
+    } 
+    .pachete:hover
+    {
+        font-size: 140%;
+    }
+    .stilpachete
+    {
+        text-decoration: none;
+        color: black;
+    }
     .cartile
     {
         display: flex;
@@ -136,6 +147,12 @@
         text-align: center;
         width: 150px;
         height: 200px;
+        transition: width 1s, height 1s;
+    }
+    .carte:hover
+    {
+        width: 170px;
+        height: 220px;
     }
     .divcarte
     {
@@ -144,6 +161,8 @@
         text-align: center;
         height: 100px;
         width: 100px;
+        margin-top: 20px;
+        transition: width 1s, height 1s;
     }
     .aranjat
     {
@@ -154,6 +173,24 @@
         border-radius: 20px;
         width: 200px;
         height: 250px;
+    }
+    .titlu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1010px;
+        height: 60px;
+        background-color: whitesmoke;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
     }
 
 </style>
@@ -173,6 +210,7 @@
             <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
         </div>
         <div class="divcontact">
+            <a href="/Acasa/harta.html"><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
             <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
             <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
         </div>
@@ -180,44 +218,201 @@
 </nav>
 
 
+    <div  class="titlu">
+        <div class="h1">
+            <h1>Produse</h1>
+        </div>
+    </div>
+
     <div class="cartile">
         <table>
         <tr>
-            <th>Produse</th>
+            <td>
+                <a href="/Paginicarti/carte1r1.html">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte1.jpeg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte2.png" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte3.jpeg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte4.jpeg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte5.jpeg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
         </tr>
         <tr>
             <td>
-                <div class="aranjat">
-                    <div class="divcarte">
-                        <img src="/Carti/carte1.jpeg" class="carte">
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/carti/carte1-r2.jpeg" class="carte">
+                        </div>
                     </div>
-                </div>
+                </a>
             </td>
-            <td><img src="/Carti/carte2.png" class="carte"></td>
-            <td><img src="/Carti/carte3.jpeg" class="carte"></td>
-            <td><img src="/Carti/carte4.jpeg" class="carte"></td>
-            <td><img src="/Carti/carte5.jpeg" class="carte"></td>
+            <td>
+                <a href="">
+                    <div class="aranjat">   
+                        <div class="divcarte">
+                            <img src="/Carti/carte2-r2.png" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte3-r2.jpg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="/Carti/carte4-r2.jpg" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
         </tr>
         <tr>
-            <td><img src="/carti/carte1-r2.jpeg" class="carte"></td>
-            <td><img src="/Carti/carte2-r2.png" class="carte"></td>
-            <td><img src="/Carti/carte3-r2.jpg" class="carte"></td>
-            <td><img src="/Carti/carte4-r2.jpg" class="carte"></td>
-            <td>carte 5</td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
         </tr>
         <tr>
-            <td>carte 1</td>
-            <td>carte 2</td>
-            <td>carte 3</td>
-            <td>carte 4</td>
-            <td>carte 5</td>
-        </tr>
-        <tr>
-            <td>carte 1</td>
-            <td>carte 2</td>
-            <td>carte 3</td>
-            <td>carte 4</td>
-            <td>carte 5</td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <div class="aranjat">
+                        <div class="divcarte">
+                            <img src="" class="carte">
+                        </div>
+                    </div>
+                </a>
+            </td>
         </tr>
     </table>
     </div>
