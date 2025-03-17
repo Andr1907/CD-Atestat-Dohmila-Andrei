@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principala</title>
+    <title>Cumpărare</title>
     <style>
         body
         {
@@ -27,7 +27,13 @@
         }
         .logo
         {
-            height: 55px; 
+            height: 40px; 
+            width: 40px;
+            transition: width 1s, height 1s;
+        }
+        .logo:hover
+        {
+            height: 55px;
             width: 55px;
         }
         .contact 
@@ -51,7 +57,6 @@
            gap: 10px;
            width: 30%;
            justify-content: end;
-           align-items: center;
         }
         .cosh 
         {
@@ -122,35 +127,6 @@
             align-items: center;
             justify-content: left;
         }
-        .divptdivtext
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .textul
-        {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 950px;
-            background-color: whitesmoke;
-            color: black;
-            font-size: 120%;
-            padding: 25px;
-            border-radius: 20px;
-            margin-bottom: 25px;
-        }
-        .divh
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-        }
         .map
         {
             height: 40px;
@@ -162,123 +138,86 @@
             height: 50px;
             width: 50px;
         }
-        .primultitlu
+        .descriere
         {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             background-color: whitesmoke;
-            color: black;
-            padding: 20px;
-            border-radius: 20px;
-            width: 950px;  
+            width: 100px;
+            height: 100px;
         }
-        .treicutii
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .cutie
-        {   
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 200px;
-            border-radius: 20px;
-            background-color: whitesmoke;
-            margin: 20px;
-        }
-        .imgtreicutii
+        .adaugaincos
         {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30px;
-            width: 30px;
-        }
-        footer
-        {
-            background-color: #FFF0DC;
-            height: 90px;
         }
         .centrat
         {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 20px;
         }
-        .img3div
+        .carte
         {
-            width: 100px;
-            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            width: 600px;
+            height: 550px;
+            border-radius: 20px;
         }
-
+        .plata
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            width: 400px;
+            height: 550px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
 
+
     <nav>
         <div class="imagine">
-        <img src="/6771589_book_education_idea_learning_school_icon.png" class="logo">
+            <a href="/Acasa/paginaprincipala.html"><img src="/6771589_book_education_idea_learning_school_icon.png" class="logo"></a>
         </div>
         <div class="produse">
-        <a href="/Produse/produse.html" class="stilproduse"><b>Produse</b></a>
+            <a href="/Produse/produse.html" class="stilproduse"><b>Produse</b></a>
         </div>
         <div class="pachete">
             <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
         </div>
         <div class="divcontact">
             <a href="/Acasa/harta.html"><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
-            <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
+            <a href=""><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
             <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
         </div>
     </nav>
 
-    <div class="treicutii">
-        <div class="cutie">
-            <img src="/Acasa/4544854_business_comerce_delivery_shop_truck_icon.png" class="img3div">
-            <br>
-            <p>livrare rapida</p>
+    <div class="centrat">
+        <div class="carte">
+            <div class="carteimg">
+                <img src="/Carti/carte2.png" style="height: 150px; width: 100px;">
+                <img src="/Carti/carte1.jpeg" style="height: 150px; width: 100px; margin-left: 2px;">
+                <img src="/Carti/carte1.jpeg" style="height: 150px; width: 100px; margin-left: 2px;">
+                <br>
+                <br>
+                <p>descriere carte</p>
+            </div>
         </div>
-        <div class="cutie">
-            <img src="/Acasa/3702394_cardbox_delivery_free_shipment_shipping_icon.png" class="img3div">
-            <br>
-            <p>transport gratuit</p>
-        </div>
-        <div class="cutie">
-            <img src="/Acasa/3702385_back_cash_money_icon.png" class="img3div">
-            <br>
-            <p>Pachete cu preturi atractive</p>
-        </div>
-    </div>
-   
-    <div class="divh">
-        <div class="primultitlu">
-            <h1>Despre noi</h1>
+        <div class="plata">
+
         </div>
     </div>
 
-    <div class="divptdivtext">
-    <div class="textul">
-        <p>Site-ul nostru este dedicat celor care doresc să investească în dezvoltarea lor personală, 
-            oferind o gamă largă de cărți care abordează subiecte esențiale precum auto-ajutor, motivație,
-            leadership, mindfulness, gestionarea timpului, și multe altele. Fie că ești în căutarea unor 
-            resurse pentru a-ți îmbunătăți abilitățile de comunicare, pentru a înțelege mai bine cum să 
-            îți gestionezi emoțiile sau pentru a-ți descoperi adevăratul potențial, vei găsi o selecție 
-            atent aleasă de titluri care îți vor ghida progresul. Cu o navigare simplă și un proces de 
-             achiziție rapid, site-ul nostru îți oferă acces instantaneu la cunoștințele care te pot ajuta
-            să devii cea mai bună versiune a ta. Fiecare carte este descrisă detaliat, iar recenziile 
-            cititorilor îți vor oferi perspective valoroase pentru a face alegerea corectă. Investind în 
-            aceste lecturi, investești în tine și în viitorul tău!</p>
-    </div>
-    </div>
-
-   
-    
-    <footer>
-
-    </footer>
 </body>
 </html>
