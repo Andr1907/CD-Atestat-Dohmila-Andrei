@@ -167,7 +167,7 @@
             align-items: center;
             background-color: whitesmoke;
             width: 600px;
-            height: 550px;
+            height: 450px;
             border-radius: 20px;
         }
         .plata
@@ -177,10 +177,39 @@
             align-items: center;
             background-color: whitesmoke;
             width: 400px;
-            height: 550px;
+            height: 450px;
             border-radius: 20px;
             margin-left: 10px;
         }
+        .carteimg
+        {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 2px;
+        }
+        .textul
+        {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+            width: 320px;
+            height: 450px;
+        }
+        .imgsrc
+        {
+            height: 250px; 
+            width: 200px; 
+            margin: 2px;
+        }
+        footer
+        {
+            height: 75px;
+            background-color: #FFF0DC;
+        }
+
     </style>
 </head>
 <body>
@@ -206,18 +235,19 @@
     <div class="centrat">
         <div class="carte">
             <div class="carteimg">
-                <img src="/Carti/carte1.jpeg" style="height: 150px; width: 100px;">
-                <img src="/Carti/carte1.jpeg" style="height: 150px; width: 100px; margin-left: 2px;">
-                <img src="/Carti/carte1.jpeg" style="height: 150px; width: 100px; margin-left: 2px;">
-                <br>
-                <br>
-                <p>descriere carte</p>
+                <img src="" class="imgsrc">
+                <div class="textul">
+                    <p>descriere carte aici</p>
+                </div>
             </div>
         </div>
         <div class="plata">
-
+            <p>???</p>
         </div>
     </div>
 
+    <footer>
+
+    </footer>
 </body>
 </html>
