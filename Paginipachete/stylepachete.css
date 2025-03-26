@@ -200,8 +200,40 @@ nav
     width: 200px; 
     margin: 2px;
 }
+
+
 footer
 {
-    height: 75px;
     background-color: #FFF0DC;
+    height: 100px;
+}
+.separat
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 5px;
+    margin-top: 20px;
+}
+.linkfooter
+{
+    text-decoration: none;
+    color: #47341c;
+    margin: 5px;
+}
+.linkfooter:hover
+{
+    color: #AB886D;
+}
+.social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgsocial
+{
+    width: 20px;
+    margin: 2px;
 }

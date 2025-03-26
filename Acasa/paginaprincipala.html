@@ -129,28 +129,6 @@
             align-items: center;
             justify-content: left;
         }
-        .divptdivtext
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .textul
-        {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            width: 950px;
-            background-color: whitesmoke;
-            color: black;
-            font-size: 120%;
-            padding: 25px;
-            border-radius: 20px;
-            margin-bottom: 25px;
-        }
         .divh
         {
             display: flex;
@@ -169,7 +147,9 @@
             height: 50px;
             width: 50px;
         }
-        .primultitlu
+
+
+        .titlu
         {
             display: flex;
             align-items: center;
@@ -216,6 +196,43 @@
             width: 100px;
             height: 80px;
         }
+        .popular
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            height: 350px;
+            width: 300px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        .carte
+        {
+            height: 270px;
+            width: 220px;
+            transition: width 1s, height 1s;
+        }
+        .carte:hover
+        {
+            height: 290px;
+            width: 240px;
+        }
+        .pret
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            height: 40px;
+            width: 300px;
+            margin: 20px;
+            margin-top: -15px;
+            border-radius: 20px;
+        }
+
+        
+        
         footer
         {
             background-color: #FFF0DC;
@@ -240,6 +257,17 @@
         {
             color: #AB886D;
         }
+        .social
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgsocial
+        {
+            width: 20px;
+            margin: 2px;
+        }
 
     </style>
 </head>
@@ -258,7 +286,7 @@
         </div>
         <div class="divcontact">
             <a href="/Acasa/harta.html"><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
-            <a href="..."><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
+            <a href="/Cos/cos.html"><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
             <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
         </div>
     </nav>
@@ -280,26 +308,46 @@
             <p>Pachete cu preturi atractive</p>
         </div>
     </div>
-   
-    <div class="divh">
-        <div class="primultitlu">
-            <h1>Despre noi</h1>
+
+    <div class="centrat">
+        <div class="titlu">
+            <h1>Cele mai populare cărți ale săptămânii</h1>
         </div>
     </div>
-
-    <div class="divptdivtext">
-    <div class="textul">
-        <p>Site-ul nostru este dedicat celor care doresc să investească în dezvoltarea lor personală, 
-            oferind o gamă largă de cărți care abordează subiecte esențiale precum auto-ajutor, motivație,
-            leadership, mindfulness, gestionarea timpului, și multe altele. Fie că ești în căutarea unor 
-            resurse pentru a-ți îmbunătăți abilitățile de comunicare, pentru a înțelege mai bine cum să 
-            îți gestionezi emoțiile sau pentru a-ți descoperi adevăratul potențial, vei găsi o selecție 
-            atent aleasă de titluri care îți vor ghida progresul. Cu o navigare simplă și un proces de 
-             achiziție rapid, site-ul nostru îți oferă acces instantaneu la cunoștințele care te pot ajuta
-            să devii cea mai bună versiune a ta. Fiecare carte este descrisă detaliat, iar recenziile 
-            cititorilor îți vor oferi perspective valoroase pentru a face alegerea corectă. Investind în 
-            aceste lecturi, investești în tine și în viitorul tău!</p>
-    </div>
+    
+    <div class="centrat">
+        <table>
+            <tr>
+                <td>
+                    <div class="centrat">
+                        <div class="popular">
+                            <a href="/Paginicarti/carte3r2.html"><img src="/Carti/carte3-r2.jpg" class="carte"></a>
+                        </div>
+                        <div class="popular">
+                            <a href="/Paginicarti/carte4r2.html"><img src="/Carti/carte4-r2.jpg" class="carte"></a>
+                        </div>
+                        <div class="popular">
+                            <a href="/Paginicarti/carte5r4.html"><img src="/Carti/carte5-r4.jpg" class="carte"></a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="centrat">
+                        <div class="pret">
+                            <p>34,50 RON</p>
+                        </div>
+                        <div class="pret">
+                            <p>39,99 RON</p>
+                        </div>
+                        <div class="pret">
+                            <p>29,99 RON</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
    
@@ -328,7 +376,23 @@
                 </table>
             </div>
             <div class="separat">
-                aici cv retele de socializare
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Urmărește-ne</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="social">
+                                <img src="/1161953_instagram_icon.png" class="imgsocial">
+                                <img src="/104501_twitter_bird_icon.png" class="imgsocial">
+                                <img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial">
+                                <img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </footer>
