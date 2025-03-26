@@ -237,3 +237,9 @@ footer
     width: 20px;
     margin: 2px;
 }
+.treicutii
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

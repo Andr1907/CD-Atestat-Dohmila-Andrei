@@ -81,14 +81,8 @@ nav
 }
 .cosh 
 {
-    height: 40px;
-    width: 40px;
-    transition: width 1s, height 1s;
-}
-.cosh:hover
-{
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 .produse
 {
@@ -146,7 +140,35 @@ nav
         align-items: center;
         justify-content: left;
     }
+    .centru
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablebutoane
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        margin: 20px;
+        border-radius: 20px;
+        width: 900px;
+        height: 500px;
+    }
+    tr
+    {
+        margin: 5px;
+    }
+    .buton
+    {
+        background-color: #F0BB78;
+        border-radius: 20px;
+        height: 40px;
+        width: 200px;
 
+    }
 
 
     footer
@@ -217,13 +239,33 @@ nav
 
 
 
-
-    <h1>Cosul de cumparaturi</h1>
-    <p> in lucru, ignorati</p>
-
+    <div class="centru">  
+        <div class="tablebutoane">
 
 
+            <table>
+                <tr>
+                    <td>
+                        <ul id="cart-items">aaaa</ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <p id="cart-total">Total: 0 RON</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="renderCart()" class="buton">Actualizează Coșul</button>
+                    </td>
+                </tr>
+            </table>
 
+            
+        </div>
+    </div>
+
+    <script src="/Cos/script.js"></script>
 
 
     <footer>

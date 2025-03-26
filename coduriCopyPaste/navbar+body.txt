@@ -133,11 +133,6 @@ nav
         align-items: center;
         justify-content: left;
     }
-    footer
-    {
-        background-color: #FFF0DC;
-        height: 100px;
-    }
     .separat
     {
         display: flex;
