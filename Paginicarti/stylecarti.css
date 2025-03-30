@@ -211,10 +211,11 @@ nav
 .buton
 {
     background-color: #AB886D;
-    border: solid #AB886D;
+    border: 2px solid black;
     width: 200px;
     height: 30px;
     border-radius: 20px;
+    color: white;
 }
 .divbuton
 {
@@ -225,47 +226,4 @@ nav
 .inputnr
 {
     width: 30px;
-}
-
-
-footer
-{
-    background-color: #FFF0DC;
-    height: 100px;
-}
-.separat
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    margin: 5px;
-    margin-top: 20px;
-}
-.linkfooter
-{
-    text-decoration: none;
-    color: #47341c;
-    margin: 5px;
-}
-.linkfooter:hover
-{
-    color: #AB886D;
-}
-.social
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imgsocial
-{
-    width: 20px;
-    margin: 2px;
-}
-.treicutii
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

@@ -3,218 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coșul dumneavoastră</title>
-    <style>
-        body
-{
-    background-color: #F0BB78;
-}
-*
-{
-    margin: 0;
-}
-nav
-{
-    background-color: #FFF0DC;
-    display: flex;
-    color: white;
-    height: 40px;
-    align-items: center;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 10px;
-    gap: 10px;
-}
-.logo
-{
-    height: 40px; 
-    width: 40px;
-    transition: height 1s, width 1s;
-}
-.logo:hover
-{
-    height: 55px;
-    width: 55px;
-}
-.stildesprenoi
-{
-    text-decoration: none;
-    color: black;
-}
-.stildesprenoi:hover
-{
-    color: #AB886D;
-}
-.map
-    {
-        height: 40px;
-        width: 40px;
-        transition: width 1s, height 1s;
-    }
-    .map:hover
-    {
-        height: 50px;
-        width: 50px;
-    }
-.contact 
-{
-    height: 40px;
-    width: 40px;
-    transition: width 1s, height 1s;
-}
-.contact:hover
-{
-    width: 50px;
-    height: 50px;
-}
-.divcontact
-{
-   display: flex;
-   height: 40px;
-   border-radius: 20px;
-   margin: 5px;
-   padding: 10px;  
-   gap: 10px;
-   width: 30%;
-   justify-content: end;
-   align-items: center;
-}
-.cosh 
-{
-    height: 50px;
-    width: 50px;
-}
-.produse
-{
-    display: flex;
-    height: 40px;
-    border-radius: 20px;
-    margin: 0px;
-    padding: 10px;  
-    gap: 10px;
-    width: 20%;
-    align-items: center;
-    justify-content: end;
-    font-size: 120%;
-} 
-.stilproduse
-{
-    text-decoration: none;
-    color: black;
-}
-.stilproduse:hover
-{
-    color: #AB886D;
-}
-.pachete
-{
-    display: flex;
-    height: 40px;
-    border-radius: 20px;
-    margin: 0px;
-    padding: 10px;  
-    gap: 10px;
-    width: 20%;
-    align-items: center;
-    justify-content: start;
-    font-size: 120%;
-}
-.stilpachete
-{
-    text-decoration: none;
-    color: black;
-}
-.stilpachete:hover
-{
-    color: #AB886D;
-}
-.imagine
-    {
-        display: flex;
-        height: 40px;
-        border-radius: 20px;
-        margin: 5px;
-        padding: 10px;  
-        gap: 10px;
-        width: 30%;
-        align-items: center;
-        justify-content: left;
-    }
-    .centru
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .tablebutoane
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: whitesmoke;
-        margin: 20px;
-        border-radius: 20px;
-        width: 900px;
-        height: 500px;
-    }
-    tr
-    {
-        margin: 5px;
-    }
-    .buton
-    {
-        background-color: #F0BB78;
-        border-radius: 20px;
-        height: 40px;
-        width: 200px;
-
-    }
-
-
-    footer
-        {
-            background-color: #FFF0DC;
-            height: 100px;
-        }
-        .separat
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 33%;
-            margin: 5px;
-            margin-top: 20px;
-        }
-        .linkfooter
-        {
-            text-decoration: none;
-            color: #47341c;
-            margin: 5px;
-        }
-        .linkfooter:hover
-        {
-            color: #AB886D;
-        }
-        .social
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .imgsocial
-        {
-            width: 20px;
-            margin: 2px;
-        }
-        .treicutii
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-    </style>
+    <title>Coș de cumpărături</title>
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/Cos/cos.css">
 </head>
 <body>
 
@@ -238,34 +29,27 @@ nav
 
 
 
-
     <div class="centru">  
-        <div class="tablebutoane">
+        <div class="informatii">
+            <div class="divaranjare">
+                <ul id="cart-items"></ul>
+            </div>
 
+            <div class="divaranjare">
+                <div class="total" style="align-items: start; justify-content: start; margin-left: 50px;">
+                    <button onclick="renderCart()" class="buton">Actualizează Coșul</button>
+                </div>
 
-            <table>
-                <tr>
-                    <td>
-                        <ul id="cart-items">aaaa</ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                        <p id="cart-total">Total: 0 RON</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button onclick="renderCart()" class="buton">Actualizează Coșul</button>
-                    </td>
-                </tr>
-            </table>
+                <div class="total" style="margin-right: 30px;">
+                    <p id="cart-total">Total: 0 RON</p>
+                </div>
+            </div>
 
-            
+            <script src="/Cos/script.js"></script>
+
         </div>
     </div>
 
-    <script src="/Cos/script.js"></script>
 
 
     <footer>
@@ -301,10 +85,10 @@ nav
                     <tr>
                         <td>
                             <div class="social">
-                                <img src="/1161953_instagram_icon.png" class="imgsocial">
-                                <img src="/104501_twitter_bird_icon.png" class="imgsocial">
-                                <img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial">
-                                <img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial">
+                                <a href=""><img src="/1161953_instagram_icon.png" class="imgsocial"></a>
+                                <a href=""><img src="/104501_twitter_bird_icon.png" class="imgsocial"></a>
+                                <a href=""><img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial"></a>
+                                <a href=""><img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial"></a>
                             </div>
                         </td>
                     </tr>
@@ -312,6 +96,7 @@ nav
             </div>
         </div>
     </footer>
+
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumpărare</title>
     <link rel="stylesheet" href="/Paginicarti/stylecarti.css">
+    <link rel="stylesheet" href="/footer.css">
 </head>
 <body>
 
@@ -26,22 +27,40 @@
         </div>
     </nav>
 
+
+    
     <div class="centrat">
         <div class="carte">
             <div class="carteimg">
                 <img src="/Carti/carte2-r2.png" class="imgsrc">
-                <div class="textul">
-                    <p>
-                        „Îndrăznește să conduci” de Brené Brown explorează conceptul de leadership bazat pe vulnerabilitate, curaj și autenticitate. Cartea subliniază importanța de a fi sinceri cu noi înșine și cu ceilalți pentru a construi relații de încredere și a deveni lideri mai eficienți. Brown discută despre cum să îmbrățișăm imperfecțiunile și să luăm decizii curajoase, chiar și în fața incertitudinii, pentru a inspira și sprijini echipele noastre.
-                    </p>
-                </div>
             </div>
         </div>
         <div class="plata">
-            <p>???</p>
+            <table>
+                <tr>
+                    <td>
+                        <div class="textul">
+                            <p>
+                                „Îndrăznește să conduci” de Brené Brown explorează conceptul de leadership bazat pe vulnerabilitate, curaj și autenticitate. Cartea subliniază importanța de a fi sinceri cu noi înșine și cu ceilalți pentru a construi relații de încredere și a deveni lideri mai eficienți. Brown discută despre cum să îmbrățișăm imperfecțiunile și să luăm decizii curajoase, chiar și în fața incertitudinii, pentru a inspira și sprijini echipele noastre.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="divbuton">
+                            <p style="margin-right: 10px;">Preț: 25 RON</p>
+                            <button onclick="addToCart({ id: 'carte2r2', name: 'Indrazneste sa conduci', price: 25 })" class="buton"><b>Adauga in cos</b></button>
+                            <script src="/Cos/script.js"></script>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
+
+    
     <footer>
         <div class="treicutii">
             <div class="separat">
@@ -69,16 +88,16 @@
                 <table>
                     <tr>
                         <td>
-                            <h3>Urmărește-ne</h3>
+                            <h3 style="color: #47341c;">Urmărește-ne</h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="social">
-                                <img src="/1161953_instagram_icon.png" class="imgsocial">
-                                <img src="/104501_twitter_bird_icon.png" class="imgsocial">
-                                <img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial">
-                                <img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial">
+                                <a href="https://www.instagram.com/"><img src="/1161953_instagram_icon.png" class="imgsocial"></a>
+                                <a href="https://www.x.com/"><img src="/104501_twitter_bird_icon.png" class="imgsocial"></a>
+                                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dro_RO"><img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial"></a>
+                                <a href="https://youtube.com/"><img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial"></a>
                             </div>
                         </td>
                     </tr>
