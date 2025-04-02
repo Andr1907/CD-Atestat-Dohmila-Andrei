@@ -20,9 +20,35 @@ nav
 }
 .logo
 {
-    height: 55px; 
+    height: 40px; 
+    width: 40px;
+    transition: height 1s, width 1s;
+}
+.logo:hover
+{
+    height: 55px;
     width: 55px;
 }
+.stildesprenoi
+{
+    text-decoration: none;
+    color: black;
+}
+.stildesprenoi:hover
+{
+    color: #AB886D;
+}
+.map
+    {
+        height: 40px;
+        width: 40px;
+        transition: width 1s, height 1s;
+    }
+    .map:hover
+    {
+        height: 50px;
+        width: 50px;
+    }
 .contact 
 {
     height: 40px;
@@ -44,17 +70,18 @@ nav
    gap: 10px;
    width: 30%;
    justify-content: end;
+   align-items: center;
 }
 .cosh 
 {
     height: 40px;
     width: 40px;
-    transition: width 1s, height 1s;
+    transition: height 1s, width 1s;
 }
 .cosh:hover
 {
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 .produse
 {
@@ -68,16 +95,15 @@ nav
     align-items: center;
     justify-content: end;
     font-size: 120%;
-    transition: font-size 1s;
 } 
-.produse:hover
-{
-    font-size: 140%;
-}
 .stilproduse
 {
     text-decoration: none;
     color: black;
+}
+.stilproduse:hover
+{
+    color: #AB886D;
 }
 .pachete
 {
@@ -91,16 +117,15 @@ nav
     align-items: center;
     justify-content: start;
     font-size: 120%;
-    transition: font-size 1s;
-} 
-.pachete:hover
-{
-    font-size: 140%;
 }
 .stilpachete
 {
     text-decoration: none;
     color: black;
+}
+.stilpachete:hover
+{
+    color: #AB886D;
 }
 .imagine
 {
@@ -114,26 +139,9 @@ nav
     align-items: center;
     justify-content: left;
 }
-.map
-{
-    height: 40px;
-    width: 40px;
-    transition: width 1s, height 1s;
-}
-.map:hover
-{
-    height: 50px;
-    width: 50px;
-}
-.stildesprenoi
-{
-    text-decoration: none;
-    color: black;
-}
-.stildesprenoi:hover
-{
-    color: #AB886D;
-}
+
+
+
 .descriere
 {
     display: flex;
@@ -162,7 +170,7 @@ nav
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    width: 600px;
+    width: 300px;
     height: 450px;
     border-radius: 20px;
 }
@@ -172,7 +180,7 @@ nav
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    width: 400px;
+    width: 700px;
     height: 450px;
     border-radius: 20px;
     margin-left: 10px;
@@ -191,54 +199,111 @@ nav
     display: flex;
     font-family: 'Times New Roman', Times, serif;
     margin: 10px;
-    width: 320px;
-    height: 450px;
+    width: 600px;
+    height: 300px;
+    font-size: 100%;
 }
 .imgsrc
 {
-    height: 250px; 
-    width: 200px; 
+    height: 350px; 
+    width: 300px; 
     margin: 2px;
 }
-
-
-footer
+.buton
 {
-    background-color: #FFF0DC;
-    height: 100px;
+    background-color: #AB886D;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
 }
-.separat
+.buton:hover
+{
+    background-color: #F0BB78;
+}
+.divbuton
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33%;
-    margin: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
-.linkfooter
+.inputnr
 {
-    text-decoration: none;
-    color: #47341c;
-    margin: 5px;
+    width: 30px;
 }
-.linkfooter:hover
+
+
+
+
+.slideshow-container 
+{
+    position: relative;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide 
+{
+    display: none;
+    width: 100%;
+}
+.imag
+{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.active 
+{
+    display: block;
+}
+
+.buttons 
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.btn 
+{
+    background: none;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover 
 {
     color: #AB886D;
 }
-.social
+.dots 
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 10px;
 }
-.imgsocial
+.dot 
 {
-    width: 20px;
-    margin: 2px;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background: #F0BB78;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.treicutii
+
+.dot.active-dot 
 {
-    display: flex;
-    width: 100%;
+    background: #AB886D;
 }

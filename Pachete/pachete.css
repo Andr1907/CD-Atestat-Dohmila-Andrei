@@ -17,38 +17,21 @@ nav
     margin: 5px;
     padding: 10px;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 .logo
 {
     height: 40px; 
     width: 40px;
-    transition: height 1s, width 1s;
+    transition: width 1s, height 1s;
 }
 .logo:hover
 {
     height: 55px;
     width: 55px;
 }
-.stildesprenoi
-{
-    text-decoration: none;
-    color: black;
-}
-.stildesprenoi:hover
-{
-    color: #AB886D;
-}
-.map
-    {
-        height: 40px;
-        width: 40px;
-        transition: width 1s, height 1s;
-    }
-    .map:hover
-    {
-        height: 50px;
-        width: 50px;
-    }
 .contact 
 {
     height: 40px;
@@ -70,7 +53,6 @@ nav
    gap: 10px;
    width: 30%;
    justify-content: end;
-   align-items: center;
 }
 .cosh 
 {
@@ -80,8 +62,8 @@ nav
 }
 .cosh:hover
 {
-    height: 50px;
     width: 50px;
+    height: 50px;
 }
 .produse
 {
@@ -95,7 +77,7 @@ nav
     align-items: center;
     justify-content: end;
     font-size: 120%;
-} 
+}
 .stilproduse
 {
     text-decoration: none;
@@ -117,14 +99,10 @@ nav
     align-items: center;
     justify-content: start;
     font-size: 120%;
-}
+} 
 .stilpachete
 {
     text-decoration: none;
-    color: black;
-}
-.stilpachete:hover
-{
     color: #AB886D;
 }
 .imagine
@@ -139,89 +117,111 @@ nav
     align-items: center;
     justify-content: left;
 }
+.divh
+{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-top: 20px;
+}
+.primultitlu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 950px;  
+}
+.map
+{
+    height: 40px;
+    width: 40px;
+    transition: width 1s, height 1s;
+}
+.map:hover
+{
+    height: 50px;
+    width: 50px;
+}
+.stildesprenoi
+{
+    text-decoration: none;
+    color: black;
+}
+.stildesprenoi:hover
+{
+    color: #AB886D;
+}
 
-.descriere
+.titlu
 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1055px;
+    height: 60px;
     background-color: whitesmoke;
-    width: 100px;
-    height: 100px;
-}
-.adaugaincos
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.centrat
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-.carte
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    width: 400px;
-    height: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
 }
-.plata
+.pachetele
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divpachet
 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    width: 600px;
-    height: 450px;
+    width: 200px;
+    height: 250px;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 5px;
 }
-.carteimg
+.aranjatpret
 {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 2px;
-}
-.textul
-{
     justify-content: center;
     align-items: center;
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px;
-    width: 500px;
-    height: 300px;
-}
-.imgsrc
-{
-    height: 350px; 
-    width: 300px; 
-    margin: 2px;
-}
-.buton
-{
-    background-color: #AB886D;
-    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 20px;
     width: 200px;
     height: 30px;
-    border-radius: 20px;
-    color: white;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
-.divbuton
+
+
+
+.imag
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:  140px;
+    height: 190px;
+    border-radius: 10px;
+    transition: width 1s, height 1s;
 }
-.inputnr
+.imag:hover
 {
-    width: 30px;
+    width: 160px;
+    height: 210px;
 }
+
+.active 
+{
+    display: block;
+}
+
+

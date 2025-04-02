@@ -4,257 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pachete</title>
-    <style>
-        body
-        {
-            background-color: #F0BB78;
-        }
-        *
-        {
-            margin: 0;
-        }
-        nav
-        {
-            background-color: #FFF0DC;
-            display: flex;
-            color: white;
-            height: 40px;
-            align-items: center;
-            border-radius: 20px;
-            margin: 5px;
-            padding: 10px;
-            gap: 10px;
-            position: sticky;
-            top: 0;
-            overflow: hidden;
-        }
-        .logo
-        {
-            height: 40px; 
-            width: 40px;
-            transition: width 1s, height 1s;
-        }
-        .logo:hover
-        {
-            height: 55px;
-            width: 55px;
-        }
-        .contact 
-        {
-            height: 40px;
-            width: 40px;
-            transition: width 1s, height 1s;
-        }
-        .contact:hover
-        {
-            width: 50px;
-            height: 50px;
-        }
-        .divcontact
-        {
-           display: flex;
-           height: 40px;
-           border-radius: 20px;
-           margin: 5px;
-           padding: 10px;  
-           gap: 10px;
-           width: 30%;
-           justify-content: end;
-        }
-        .cosh 
-        {
-            height: 40px;
-            width: 40px;
-            transition: width 1s, height 1s;
-        }
-        .cosh:hover
-        {
-            width: 50px;
-            height: 50px;
-        }
-        .produse
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: end;
-            font-size: 120%;
-        }
-        .stilproduse
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .stilproduse:hover
-        {
-            color: #AB886D;
-        }
-        .pachete
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 0px;
-            padding: 10px;  
-            gap: 10px;
-            width: 20%;
-            align-items: center;
-            justify-content: start;
-            font-size: 120%;
-        } 
-        .stilpachete
-        {
-            text-decoration: none;
-            color: #AB886D;
-        }
-        .imagine
-        {
-            display: flex;
-            height: 40px;
-            border-radius: 20px;
-            margin: 5px;
-            padding: 10px;  
-            gap: 10px;
-            width: 30%;
-            align-items: center;
-            justify-content: left;
-        }
-        .divh
-        {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .primultitlu
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: whitesmoke;
-            color: black;
-            padding: 20px;
-            border-radius: 20px;
-            width: 950px;  
-        }
-        .map
-        {
-            height: 40px;
-            width: 40px;
-            transition: width 1s, height 1s;
-        }
-        .map:hover
-        {
-            height: 50px;
-            width: 50px;
-        }
-        .stildesprenoi
-        {
-            text-decoration: none;
-            color: black;
-        }
-        .stildesprenoi:hover
-        {
-            color: #AB886D;
-        }
-
-        .titlu
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .h1
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 1055px;
-            height: 60px;
-            background-color: whitesmoke;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-        }
-        .pachetele
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .divpachet
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: whitesmoke;
-            width: 200px;
-            height: 250px;
-            border-radius: 20px;
-            margin: 5px;
-        }
-        .aranjatpret
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: whitesmoke;
-            border-radius: 20px;
-            width: 200px;
-            height: 30px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-        }
-
-        footer
-        {
-            background-color: #FFF0DC;
-            height: 100px;
-            margin-top: 15px;
-        }
-        .separat
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 33%;
-            margin: 5px;
-            margin-top: 20px;
-        }
-        .linkfooter
-        {
-            text-decoration: none;
-            color: #47341c;
-            margin: 5px;
-        }
-        .linkfooter:hover
-        {
-            color: #AB886D;
-        }
-        .social
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .imgsocial
-        {
-            width: 20px;
-            margin: 2px;
-        }
-        .treicutii
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-</style>
+    <link rel="stylesheet" href="/Pachete/pachete.css">
+    <link rel="stylesheet" href="/footer.css">
 </head>
 <body>
     
@@ -286,101 +37,47 @@
         <table>
             <tr>
                 <td>
-                    <a href="">
+                    <a href="/Paginipachete/pachet1.html">
                         <div class="divpachet">
-
+                            <div class="4carti">
+                                <img class="imag" src="/Carti/pachet1.png">
+                            </div>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="">
+                    <a href="/Paginipachete/pachet2.html">
                         <div class="divpachet">
-
+                            <div class="4carti">
+                                <img class="imag" src="/Carti/pachet2.png">
+                            </div>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="">
+                    <a href="/Paginipachete/pachet3.html">
                         <div class="divpachet">
-
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="">
+                    <a href="/Paginipachete/pachet4.html">
                         <div class="divpachet">
-
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="">
+                    <a href="/Paginipachete/pachet5.html">
                         <div class="divpachet">
-
-                        </div>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="aranjatpret">
-                        <p>1000 RON</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="aranjatpret">
-                        <p>1000 RON</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="aranjatpret">
-                        <p>1000 RON</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="aranjatpret">
-                        <p>1000 RON</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="aranjatpret">
-                        <p>1000 RON</p>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">
-                        <div class="divpachet">
-
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="">
-                        <div class="divpachet">
-
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="">
-                        <div class="divpachet">
-
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="">
-                        <div class="divpachet">
-
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="">
-                        <div class="divpachet">
-
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
                         </div>
                     </a>
                 </td>
@@ -388,33 +85,136 @@
             <tr>
                 <td>
                     <div class="aranjatpret">
-                        <p>1000 RON</p>
+                        <p>95 RON</p>
                     </div>
                 </td>
                 <td>
                     <div class="aranjatpret">
-                        <p>1000 RON</p>
+                        <p>84 RON</p>
                     </div>
                 </td>
                 <td>
                     <div class="aranjatpret">
-                        <p>1000 RON</p>
+                        <p>80 RON</p>
                     </div>
                 </td>
                 <td>
                     <div class="aranjatpret">
-                        <p>1000 RON</p>
+                        <p>90 RON</p>
                     </div>
                 </td>
                 <td>
                     <div class="aranjatpret">
-                        <p>1000 RON</p>
+                        <p>100 RON</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/Paginipachete/pachet6.html">
+                        <div class="divpachet">
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Paginipachete/pachet7.html">
+                        <div class="divpachet">
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Paginipachete/pachet8.html">
+                        <div class="divpachet">
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Paginipachete/pachet9.html">
+                        <div class="divpachet">
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Paginipachete/pachet10.html">
+                        <div class="divpachet">
+                            <div class="4carti">
+                                <img class="imag" src="/103392_image_book_add_icon.png">
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="aranjatpret">
+                        <p>87 RON</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aranjatpret">
+                        <p>94 RON</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aranjatpret">
+                        <p>120 RON</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aranjatpret">
+                        <p>109.50 RON</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aranjatpret">
+                        <p>50 RON</p>
                     </div>
                 </td>
             </tr>
         </table>
     </div>
 
+    <div class="pachetele">
+        <div class="divpachet">
+            <a href="/Paginipachete/pachet11.html"><img class="imag" src="/103392_image_book_add_icon.png"></a>
+        </div>
+        <div class="divpachet">
+            <a href="/Paginipachete/pachet12.html"><img class="imag" src="/103392_image_book_add_icon.png"></a>
+        </div>
+        <div class="divpachet">
+            <a href="/Paginipachete/pachet13.html"><img class="imag" src="/103392_image_book_add_icon.png"></a>
+        </div>
+        <div class="divpachet">
+            <a href="/Paginipachete/pachet14.html"><img class="imag" src="/103392_image_book_add_icon.png"></a>
+        </div>
+    </div>
+
+    <div class="pachetele" style="margin-bottom: 20px;">
+        <div class="aranjatpret" style="margin-right: 5px; margin-top: 5px;">
+            <p>130 RON</p>
+        </div>
+        <div class="aranjatpret" style="margin-left: 5px; margin-right: 5px; margin-top: 5px;">
+            <p>120 RON</p>
+        </div>
+        <div class="aranjatpret" style="margin-left: 5px; margin-right: 5px; margin-top: 5px;">
+            <p>135 RON</p>
+        </div>
+        <div class="aranjatpret" style="margin-left: 5px; margin-right: 5px; margin-top: 5px;">
+            <p>70 RON</p>
+        </div>
+    </div>
     
 
     <footer>
