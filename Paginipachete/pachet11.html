@@ -1,17 +1,175 @@
-📚 Pachetul Esențial pentru Succes Financiar și Autocunoaștere 💡  
-<br>  
-Îmbunătățește-ți relația cu banii, învață să trăiești autentic și să devii un maestru al influenței! Acest pachet conține cărți esențiale pentru cei care doresc să își transforme viața personală și financiară.  
-<br>  
-📌 Include:  
-<br>  
-✅ **Psihologia Banilor – Morgan Housel**: Învață cum percepțiile tale despre bani îți influențează deciziile financiare și cum să atingi prosperitatea.  
-<br>  
-✅ **Fii Ceea Ce Ești – Eric Fromm**: Descoperă cum să trăiești în acord cu valorile tale și să îți găsești adevărata esență.  
-<br>  
-✅ **Tată Bogat, Tată Sărac – Robert Kiyosaki**: Transformă-ți gândirea financiară și învață cum să devii independent financiar.  
-<br>  
-✅ **Arta Subtilă a Nepăsării – Mark Manson**: Renunță la grijile inutile și învață să îți concentrezi energia asupra a ceea ce contează cu adevărat.  
-<br>  
-✅ **Arta Manipulării – Robert Greene**: Descoperă tehnici subtile de influențare pentru a obține ceea ce îți dorești.  
-<br>  
-📖 Un pachet esențial pentru cei care vor să își îmbunătățească gândirea financiară, să își descopere autenticitatea și să devină maeștri în influențarea celor din jur! 🚀
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumparare</title>
+    <link rel="stylesheet" href="/Paginipachete/stylepachete.css">
+    <link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="imagine">
+            <a href="/Acasa/paginaprincipala.html"><img src="/6771589_book_education_idea_learning_school_icon.png" class="logo"></a>
+            <a href="/Acasa/DespreNoi.html" class="stildesprenoi"><b>Despre noi</b></a>
+        </div>
+        <div class="produse">
+            <a href="/Produse/produse.html" class="stilproduse"><b>Produse</b></a>
+        </div>
+        <div class="pachete">
+            <a href="/Pachete/pachete.html" class="stilpachete"><b>Pachete</b></a>
+        </div>
+        <div class="divcontact">
+            <a href="/Acasa/harta.html"><img src="/9023583_map_pin_fill_icon.png" class="map"></a>
+            <a href="/Cos/cos.html"><img src="/9055138_bxs_basket_icon.png" class="cosh"></a>
+            <a href="/Contact/Contact.html"><img src="/9055353_bxs_phone_call_icon.png" class="contact"></a>
+        </div>
+    </nav>
+
+
+
+    <div class="centrat">
+        <div class="carte">
+            <div class="carteimg">
+                <div class="slideshow-container">
+                    <img class="slide active imag" src="/Carti/carte2-r5.jpg">
+                    <img class="slide imag" src="/Carti/carte3-r6.jpg">
+                    <img class="slide imag" src="/Carti/carte4-r6.jpg">
+                    <img class="slide imag" src="/Carti/carte5-r6.jpg" >
+            
+                    <div class="buttons">
+                        <button class="btn" onclick="prevSlide()">&#10094;</button>
+                        <button class="btn" onclick="nextSlide()">&#10095;</button>
+                    </div>
+
+                    <div class="dots">
+                        <span class="dot active-dot" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                    </div>
+                </div>
+                <script>
+                    let index = 0;
+                    const slides = document.querySelectorAll('.slide');
+                    const dots = document.querySelectorAll('.dot');
+            
+                    function showSlide(n) {
+                        slides.forEach((slide, i) => {
+                            slide.classList.toggle('active', i === n);
+                            dots[i].classList.toggle('active-dot', i === n);
+                        });
+                    }
+            
+                    function nextSlide() {
+                        index = (index + 1) % slides.length;
+                        showSlide(index);
+                    }
+            
+                    function prevSlide() {
+                        index = (index - 1 + slides.length) % slides.length;
+                        showSlide(index);
+                    }
+            
+                    function goToSlide(n) {
+                        index = n;
+                        showSlide(index);
+                        resetInterval();
+                    }
+            
+                    function resetInterval() {
+                        clearInterval(interval);
+                        interval = setInterval(nextSlide, 3000);
+                    }
+            
+                    document.querySelector('.buttons').addEventListener('click', resetInterval);
+                </script>
+            </div>
+        </div>
+        <div class="plata">
+            <table>
+                <tr>
+                    <td>
+                        <div class="textul">
+                            <p>
+                                📚 <b>Pachetul Esențial pentru Dezvoltare Personală și Autocunoaștere</b>
+                                <br> 
+                                Îmbunătățește-ți încrederea în sine, trăiește autentic și descoperă puterea momentului prezent! Acest pachet conține cărți esențiale pentru cei care doresc să își transforme viața personală și să atingă echilibrul interio.  
+                                <br>  
+                                📌 <b>Include:</b> 
+                                <br>  
+                                ✅ Puterea prezentului – Eckhart Tolle: Un ghid practic care te învață să trăiești ancorat în prezent, eliberându-te de influența negativă a minții și ego-uli.
+                                <br>  
+                                ✅ Alege să fii curajos – Gary Chapman & Clarence Shuler*: Un ghid scris cu căldură și empatie de doi consilieri psihologici cu o experiență de decenii, care îi va ajuta pe băieții adolescenți să ia cele mai bune decizii în anii plini de provocări ai formării personae. 
+                                <br>  
+                                ✅ Ești aici – Thich Nhat Hanh*: Tehnici simple de meditație care îți pot schimba viața, prezentate de un maestru Zen recunoscut internaționl. 
+                                <br>  
+                                ✅ Cum să ai încredere în tine – Dr. Barbara Markway & Celia Ampel*: Include exerciții și teste bazate pe cercetări științifice recente pentru a-ți crește stima de sine și a învinge anxietata. 
+                                <br> 
+                                📖 Un pachet esențial pentru cei care vor să își îmbunătățească încrederea în sine, să trăiască autentic și să descopere puterea momentului prezen! 🚀
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="divbuton">
+                            <p style="margin-right: 10px;">Preț: 19 €</p>
+                            <button onclick="addToCart({ id: 'pachet11', name: 'Pachet 11', price: 19 })" class="buton"><b>Adauga in cos</b></button>
+                            <script src="/Cos/script.js"></script>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="treicutii">
+            <div class="separat">
+                <img src="/6771589_book_education_idea_learning_school_icon.png" style="height: 70px;">
+            </div>
+            <div class="separat">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/Acasa/paginaprincipala.html" class="linkfooter">Acasa</a>
+                        </td>
+                        <td>
+                            <a href="/Acasa/DespreNoi.html" class="linkfooter">Despre noi</a>
+                        </td>
+                        <td>
+                            <a href="/Acasa/harta.html" class="linkfooter">Locatii</a>
+                        </td>
+                        <td>
+                            <a href="/Contact/Contact.html" class="linkfooter">Contact</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="separat">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Urmărește-ne</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="social">
+                                <a href="https://www.instagram.com/"><img src="/1161953_instagram_icon.png" class="imgsocial"></a>
+                                <a href="https://www.x.com/"><img src="/104501_twitter_bird_icon.png" class="imgsocial"></a>
+                                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dro_RO"><img src="/5282541_fb_social media_facebook_facebook logo_social network_icon.png" class="imgsocial"></a>
+                                <a href="https://youtube.com/"><img src="/5305164_play_video_youtube_youtube logo_icon.png" class="imgsocial"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
